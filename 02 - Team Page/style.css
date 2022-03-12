@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#about{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    padding-left: 4%;
+}
+
+h1{
+    width: 50%;
+    font: 700 36px 'PT Serif', serif;
+    margin-top: 10px;
+}
+
+#text{
+    width: 50%;
+    box-sizing: border-box;
+}
+    #who{
+        font: 600 20px 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    #desc{
+        font: 400 18px 'Poppins', sans-serif;
+        margin-top: 0;
+    }
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+}
+
+#grid{
+    width: 75%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 3%;
+    box-sizing: border-box;
+    padding-left: 4%;
+}
+
+    .item{
+        margin-bottom: 100px;
+    }
+
+    .item:nth-of-type(3n+2) {
+        position: relative;
+        top: 100px;
+    }
+
+    #title{
+        font: 16px 'PT Serif', serif;
+        margin: 0;
+        writing-mode: vertical-rl;
+    }
+
+    #name{
+        font: 600 20px 'Poppins', sans-serif;
+        float: left;
+        margin: 0;
+    }
+
+    img{
+        width: 80%;
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+footer{
+    font: 700 18px 'Space Mono', monospace;
+    text-align: center;
+    margin-top: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+@media (max-width: 900px){
+    h1{
+        width: 100%;
+    }
+
+    #grid{
+    width: 95%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 3%;
+    }
+
+    .item:nth-of-type(3n+2) {
+        position: relative;
+        top: 0;
+    }
+
+    .item:nth-of-type(2n) {
+        position: relative;
+        top: 100px;
+    }
+
+    #about{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 60px;
+    }
+
+    #text{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 510px){
+    #about{
+        margin-bottom: 40px;
+    }
+
+    img{
+        width: 82%;
+        margin: 0 5px 5px 0;
+    }
+
+    #title{
+        font-size: 14px;
+    }
+
+    #name{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 510px){
+    #title{
+        font-size: 12px;
+    }
+
+    #name{
+        font-size: 16px;
+    }
+}
